@@ -9,6 +9,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Navigation Bar: Contains links to different sections of the portfolio -->
     <nav class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -17,6 +18,8 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- Hero Section: Introduction and call-to-action -->
     <header class="hero">
         <div class="hero-content">
             <h1>Hi, I'm Michael Pedigo</h1>
@@ -24,16 +27,78 @@
             <a href="projects.html" class="btn">Explore My Work</a>
         </div>
     </header>
+
+    <!-- About Section: Brief information about me and my skills -->
     <section class="about">
         <h2>About Me</h2>
         <p>I specialize in creating dynamic, user-friendly websites that tell compelling stories and showcase brands effectively. My passion lies in blending design and development to craft memorable digital experiences.</p>
     </section>
+
+    <!-- Footer: Contains GitHub link and copyright information -->
     <footer>
         <a href="https://github.com/Cheezymrp" target="_blank">
             <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" style="width: 30px; height: 30px;">
         </a>
         <p>&copy; 2025 Michael Pedigo. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+
+    <!-- Hidden Components Page: This section contains frequently used components, hidden by default -->
+    <div id="hidden-components" style="display: none;">
+        <h1>Frequently Used Components</h1>
+        <!-- Example of a button component -->
+        <div class="component">
+            <h2>Button</h2>
+            <button>Sample Button</button>
+        </div>
+        <!-- Example of a card component -->
+        <div class="component">
+            <h2>Card</h2>
+            <div class="card">
+                <h3>Card Title</h3>
+                <p>Card content goes here.</p>
+            </div>
+        </div>
+        <!-- Example of a modal component -->
+        <div class="component">
+            <h2>Modal</h2>
+            <div class="modal">
+                <h3>Modal Title</h3>
+                <p>Modal content goes here.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Easter Egg Button: Clicking this button 100 times reveals the hidden components page -->
+    <div id="easter-egg-container">
+        <button id="easter-egg-button">Click me!</button>
+        <!-- Displays the number of times the button has been clicked -->
+        <p id="click-count">Clicks: 0</p>
+    </div>
+
+    <script>
+        // Get references to the button, click count display, and hidden components section
+        const button = document.getElementById('easter-egg-button');
+        const clickCountDisplay = document.getElementById('click-count');
+        const hiddenComponents = document.getElementById('hidden-components');
+
+        // Initialize the click count variable
+        let clickCount = 0;
+
+        // Add an event listener to the button to track clicks
+        button.addEventListener('click', () => {
+            clickCount++; // Increment the click count
+            clickCountDisplay.textContent = `Clicks: ${clickCount}`; // Update the click count display
+
+            // Check if the button has been clicked 100 times
+            if (clickCount === 100) {
+                document.body.innerHTML = '<h1 style="color: red; text-align: center; margin-top: 20%;">💥 Boom! The page has exploded! 💥</h1>'; // Clear the webpage and display explosion message
+                setTimeout(() => {
+                    document.body.innerHTML = ''; // Clear the explosion message
+                    document.body.appendChild(hiddenComponents); // Append the hidden components to the body
+                    hiddenComponents.style.display = 'block'; // Ensure the hidden components are visible
+                }, 6000); // Wait for 6 seconds before showing the components
+            }
+        });
+    </script>
 </body>
 </html>

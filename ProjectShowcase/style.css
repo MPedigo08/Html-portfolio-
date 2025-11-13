@@ -311,3 +311,91 @@ footer {
 .navbar a:hover {
     color: #ff758c; /* Changes text color on hover */
 }
+
+/* Hidden Components Page */
+/* Styles for the hidden components section */
+#hidden-components {
+    padding: 20px; /* Add padding inside the section */
+    background-color: #f9f9f9; /* Light gray background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px auto; /* Center the section with margin */
+    max-width: 800px; /* Limit the maximum width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+#hidden-components h1 {
+    font-size: 2rem; /* Large font size for the heading */
+    color: #333; /* Dark gray text color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Component */
+/* General styles for each component */
+.component {
+    margin-bottom: 20px; /* Space below each component */
+}
+
+.component h2 {
+    font-size: 1.5rem; /* Medium font size for component titles */
+    color: #555; /* Medium gray text color */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+/* Button Component */
+/* Styles for the sample button */
+.component button {
+    padding: 10px 20px; /* Add padding inside the button */
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Standard font size */
+}
+
+.component button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Card Component */
+/* Styles for the sample card */
+.card {
+    padding: 15px; /* Add padding inside the card */
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.card h3 {
+    font-size: 1.25rem; /* Medium font size for card titles */
+    color: #333; /* Dark gray text color */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.card p {
+    font-size: 1rem; /* Standard font size for card content */
+    color: #666; /* Gray text color */
+}
+
+/* Modal Component */
+/* Styles for the sample modal */
+.modal {
+    padding: 20px; /* Add padding inside the modal */
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.modal h3 {
+    font-size: 1.5rem; /* Medium font size for modal titles */
+    color: #333; /* Dark gray text color */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.modal p {
+    font-size: 1rem; /* Standard font size for modal content */
+    color: #666; /* Gray text color */
+}
